@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/layoutsite.css">
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <section class="section_header">
+            <div class="container">
+                <div class="row py-2 align-items-center">
+                    <div class="col-6 col-md-3">
+                        <a href="index.html">
+                            <img src="assets/image/logo (1).webp" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5 d-none d-md-block">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                           
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                          
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <div class="input-group">
+                            <span class="form-control">123456789</span>
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="icon-box">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="icon-box">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="icon-box">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <menu>
+        
+        <div id="menu">
+            <ul>
+                <li onmouseover="showSubmenu('submenu1')" onmouseout="hideSubmenu('submenu1')">Trang chủ</li>
+                <li onmouseover="showSubmenu('submenu2')" onmouseout="hideSubmenu('submenu2')" id="product">Sản phẩm<i class="arrow-down">&#9660;</i></li>
+                <li>Sản phẩm khuyến mãi</li>
+                <li>Tin tức</li>
+                <li>Giới thiệu</li>
+                <li>Liên hệ</li>
+                <li>Đặt hàng</li>
+                <li>Chính sách thành viên</li>
+            </ul>
+        </div>
+        
+        <!-- Phần submenu -->
+        <div id="submenu" style="top: 40px; left: 170px;">
+            <ul>
+                <li>Trái cây</li>
+                <li>Đồ khô</li>
+                <li>Nước ép</li>
+            </ul>
+        </div>
+        
+        <script>
+            // Hiển thị submenu khi rê chuột vào mục menu
+            function showSubmenu(id) {
+                var submenu = document.getElementById(id);
+                submenu.style.display = "block";
+            }
+        
+            // Ẩn submenu khi rê chuột ra khỏi mục menu
+            function hideSubmenu(id) {
+                var submenu = document.getElementById(id);
+                submenu.style.display = "none";
+            }
+        </script>
+       
+        </menu>
+        <div class="col-20 col-md-14\">
+            <a href="index.html">
+                <img src="assets/image/hinh1.webp" class="img-fluid" alt="">
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="footer-column">
+              <img src="assets/image/logo (1).webp" alt="logo" class="footer-logo">
+              <p class="footer-text">Chúng tôi hi vọng tất cả người tiêu dùng Việt Nam sẽ được sử dụng những thực phẩm rau củ quả tươi ngon, bổ dưỡng và an toàn nhất tại cửa hàng cung cấp thực phẩm rau củ sạch Dola Organic.</p>
+              <p class="footer-heading">HÌNH THỨC THANH TOÁN</p>
+              <img src="assets/image/hinh2.webp" alt="Payment" width="50" height="50">
+              <img src="assets/image/hinh3.webp" alt="Payment" width="50" height="50">
+              <img src="assets/image/hinh4.webp" alt="Payment" width="50" height="50">
+            </div>
+          
+            <div class="footer-column">
+              <p class="footer-heading">CHÍNH SÁCH</p>
+              <p class="footer-text">Chính sách thành viên</p>
+              <p class="footer-text">Chính sách thanh toán</p>
+              <p class="footer-text">Hướng dẫn mua hàng</p>
+              <p class="footer-text">Bảo mật thông tin cá nhân</p>
+              <p class="footer-text">Quà tặng tri ân</p>
+            </div>
+          
+            <div class="footer-column">
+              <p class="footer-heading">THÔNG TIN CHUNG</p>
+              <p class="footer-text">Địa chỉ: 70 Lữ Gia, Phường 15, Quận 11, TPHCM</p>
+              <p class="footer-text">Điện thoại: 123456789</p>
+              <p class="footer-text">Email: support@sapo.vn</p>
+              <p class="footer-heading">LIÊN KẾT SÀN</p>
+              <img src="assets/image/hinh5.webp" alt="Link" width="50" height="50">
+              <img src="assets/image/hinh6.webp" alt="Link" width="50" height="50">
+              <img src="assets/image/hinh7.webp" alt="Link" width="50" height="50">
+              <img src="assets/image/hinh8.webp" alt="Link" width="50" height="50">
+            </div>
+          
+            <div class="footer-column">
+                <p class="footer-heading">INSTAGRAM</p>
+                <img src="assets/image/hinh9.webp" alt="Instagram" width="80" height="80">
+                <img src="assets/image/hinh10.webp" alt="Instagram" width="80" height="80">
+                <img src="assets/image/hinh11.webp" alt="Instagram" width="80" height="80">
+                <img src="assets/image/hinh12.webp" alt="Instagram" width="80" height="80">
+                <img src="assets/image/hinh16.webp" alt="Instagram" width="80" height="80">
+                <img src="assets/image/hinh15.webp" alt="Instagram" width="80" height="80">
+              </div>
+            <div class="footer-border"></div>
+          <p>Bản quyền thuộc về Dola. Cung cấp bởi Sapo.</p>
+          </footer>
+          
+          
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
